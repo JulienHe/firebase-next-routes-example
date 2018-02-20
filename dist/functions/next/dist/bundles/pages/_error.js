@@ -67,25 +67,24 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "/Users/julienhenrotte/Documents/Dev/firebase-next-routes-example/node_modules/next/dist/pages/_error.js":
+/***/ 11:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(12);
+
+
+/***/ }),
+
+/***/ 12:
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/julienhenrotte/Documents/Dev/firebase-next-routes-example/node_modules/next/dist/pages/_error.js");
 
-/***/ }),
-
-/***/ 1:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("/Users/julienhenrotte/Documents/Dev/firebase-next-routes-example/node_modules/next/dist/pages/_error.js");
-
-
 /***/ })
 
 /******/ });
-//# sourceMappingURL=_error.js.map
