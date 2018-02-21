@@ -17,9 +17,9 @@ It is recommended to use a package manager that uses a lockfile and caching for 
 
 Set up firebase:
 
-create a project through the [firebase web console](https://console.firebase.google.com/)
-grab the projects ID from the web consoles URL: [console.firebase.google.com/project](https://console.firebase.google.com/project/)
-update the `.firebaserc` default project ID to the newly created project
+- create a project through the [firebase web console](https://console.firebase.google.com/)
+- grab the projects ID from the web consoles URL: [console.firebase.google.com/project](https://console.firebase.google.com/project/)
+- update the `.firebaserc` default project ID to the newly created project
 
 ## Next.js Development
 
