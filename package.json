@@ -23,7 +23,7 @@
   },
   "scripts": {
     "fblogin": "yarn firebase login",
-    "dev": "next src/app",
+    "dev": "node internal/server.js",
     "deploy-app": "yarn firebase deploy --only hosting,functions:app",
     "deploy-functions": "yarn firebase deploy --only functions:greetings",
     "deploy-all": "yarn firebase deploy",
