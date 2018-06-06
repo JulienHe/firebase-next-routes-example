@@ -67,30 +67,70 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-module.exports = require("react");
+/***/ "../routes.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+const routes = module.exports = __webpack_require__("next-routes")()
+
+routes
+.add('home', '/', 'index')
+.add('about', '/about', 'about')
+.add('blog', '/blog', 'about')
+
 
 /***/ }),
-/* 1 */
+
+/***/ "./components/App.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Header__ = __webpack_require__("./components/Header.js");
+var _jsxFileName = "/Users/braunreu/Desktop/firebase-next-routes-example/src/app/components/App.js";
 
-// EXTERNAL MODULE: external "react"
-var external__react_ = __webpack_require__(0);
-var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
-// EXTERNAL MODULE: ../routes.js
-var routes = __webpack_require__(2);
-var routes_default = /*#__PURE__*/__webpack_require__.n(routes);
 
-// CONCATENATED MODULE: ./components/Header.js
+var App = function App(_ref) {
+  var children = _ref.children;
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "main",
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__Header__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      }
+    }),
+    children
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (App);
+
+/***/ }),
+
+/***/ "./components/Header.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export Header */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes__ = __webpack_require__("../routes.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__routes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__routes__);
+var _jsxFileName = '/Users/braunreu/Desktop/firebase-next-routes-example/src/app/components/Header.js';
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -102,7 +142,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Header_Header = function (_PureComponent) {
+var Header = function (_PureComponent) {
   _inherits(Header, _PureComponent);
 
   function Header() {
@@ -114,33 +154,65 @@ var Header_Header = function (_PureComponent) {
   _createClass(Header, [{
     key: 'render',
     value: function render() {
-      return external__react__default.a.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'header',
-        null,
-        external__react__default.a.createElement(
-          routes["Link"],
-          { route: 'home', passHref: true },
-          external__react__default.a.createElement(
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1__routes__["Link"],
+          { route: 'home', passHref: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 8
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 9
+              }
+            },
             'Home'
           )
         ),
-        external__react__default.a.createElement(
-          routes["Link"],
-          { route: 'about', passHref: true },
-          external__react__default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1__routes__["Link"],
+          { route: 'about', passHref: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 11
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 12
+              }
+            },
             'About'
           )
         ),
-        external__react__default.a.createElement(
-          routes["Link"],
-          { route: 'blog', passHref: true },
-          external__react__default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1__routes__["Link"],
+          { route: 'blog', passHref: true, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 14
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'a',
-            null,
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 15
+              }
+            },
             'Blog'
           )
         )
@@ -149,76 +221,69 @@ var Header_Header = function (_PureComponent) {
   }]);
 
   return Header;
-}(external__react_["PureComponent"]);
+}(__WEBPACK_IMPORTED_MODULE_0_react__["PureComponent"]);
 
-/* harmony default export */ var components_Header = (Header_Header);
-// CONCATENATED MODULE: ./components/App.js
-
-
-
-var App_App = function App(_ref) {
-  var children = _ref.children;
-  return external__react__default.a.createElement(
-    "main",
-    null,
-    external__react__default.a.createElement(components_Header, null),
-    children
-  );
-};
-
-/* harmony default export */ var components_App = __webpack_exports__["a"] = (App_App);
+/* harmony default export */ __webpack_exports__["a"] = (Header);
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
 
-const routes = module.exports = __webpack_require__(3)()
-
-routes
-.add('home', '/', 'index')
-.add('about', '/about', 'about')
-.add('blog', '/blog', 'about')
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("next-routes");
-
-/***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(8);
-
-
-/***/ }),
-/* 8 */
+/***/ "./pages/about.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App__ = __webpack_require__("./components/App.js");
+var _jsxFileName = "/Users/braunreu/Desktop/firebase-next-routes-example/src/app/pages/about.js";
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_1__components_App__["a" /* default */],
-    null,
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "p",
-      null,
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        }
+      },
       "About Page"
     )
   );
 });
 
+/***/ }),
+
+/***/ 3:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./pages/about.js");
+
+
+/***/ }),
+
+/***/ "next-routes":
+/***/ (function(module, exports) {
+
+module.exports = require("next-routes");
+
+/***/ }),
+
+/***/ "react":
+/***/ (function(module, exports) {
+
+module.exports = require("react");
+
 /***/ })
-/******/ ]);
+
+/******/ });
+//# sourceMappingURL=about.js.map
